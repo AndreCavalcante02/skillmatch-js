@@ -1,6 +1,8 @@
 
 import { Candidato } from "./src/candidato.js";
 import { vagas } from "./src/vagas.js";
+import { CandidatoFrontEnd } from "./src/candidatoFrontEnd.js";
+import { criarAcompanhamentoEstudos } from "./src/acompanhamentoEstudos.js";
 
 
 const candidato = new Candidato(
@@ -17,6 +19,21 @@ console.log("Possui HTML?", candidato.possuiHabilidade("HTML"));
 console.log("Possui React?", candidato.possuiHabilidade("React"));
 console.log("Disponível:", candidato.estaDisponivel);
 console.log("Objetivo:", candidato.objetivo);
+
+
+const candidatoFrontEnd = new CandidatoFrontEnd(
+  "André",
+  "Júnior",
+  ["HTML", "CSS", "JavaScript"]
+);
+
+console.log("Teste de herança:");
+console.log(candidatoFrontEnd.apresentar());
+console.log(candidatoFrontEnd.recomendarEstudo());
+console.log(
+  "Possui método herdado?",
+  candidatoFrontEnd.possuiHabilidade("JavaScript")
+);
 
 
 console.log("Vagas disponíveis:");
@@ -92,7 +109,7 @@ const frequenciaHabilidades = resultados
 const recomendacoesEstudo = Object.entries(frequenciaHabilidades)
   .sort((a, b) => b[1] - a[1]);
 
-console.log("\nRecomendação de estudo:");
+console.log("Recomendação de estudo:");
 
 if (recomendacoesEstudo.length === 0) {
   console.log("Nenhuma habilidade faltante nas vagas analisadas.");
@@ -103,3 +120,33 @@ if (recomendacoesEstudo.length === 0) {
     );
   });
 }
+
+
+
+function percorrerRecomendacoes(recomendacoes, callback) {
+  recomendacoes.forEach((recomendacao, indice) => {
+    callback(recomendacao, indice);
+  });
+}
+
+console.log("Teste de callback:");
+
+percorrerRecomendacoes(
+  recomendacoesEstudo,
+  (recomendacao, indice) => {
+    console.log(
+      `${indice + 1}. ${recomendacao[0]} — exigida em ${recomendacao[1]} vaga(s)`
+    );
+  }
+);
+
+
+const acompanhamento = criarAcompanhamentoEstudos();
+
+console.log("Teste de closure:");
+console.log(acompanhamento.registrarEstudo("React"));
+console.log(acompanhamento.registrarEstudo("Git"));
+console.log(
+  "Total de estudos concluídos:",
+  acompanhamento.obterTotal()
+);
