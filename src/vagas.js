@@ -27,6 +27,6 @@ export function carregarVagas() {
       }
 
       resolve(vagas);
-    }, 1000);
+    }, 2000);
   });
 }

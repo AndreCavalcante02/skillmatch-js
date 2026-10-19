@@ -120,6 +120,18 @@ skillmatch-js/
 └── skillmatch.js
 ```
 
+
+## 🔗 Links do Projeto
+
+- **Repositório público no GitHub:** https://github.com/AndreCavalcante02/skillmatch-js
+- **Quadro Kanban (Trello):** https://trello.com/invite/b/6ad3a179b950f8e98e74c3ca/ATTI22e3d217dfd7658918d8440df5c8977c39D8190E/skillmatch-js-mini-projeto-avaliativo
+- **Vídeo de demonstração:**
+
+## 🎥 Demonstração
+
+O vídeo apresenta o funcionamento do SkillMatch JS, incluindo a execução do projeto e a análise de compatibilidade entre o perfil do candidato e as vagas disponíveis.
+
+
 ## Autor
 
 **Aluno:** André Cavalcante Silva
@@ -133,7 +145,3 @@ skillmatch-js/
 **Projeto:** SkillMatch JS — Simulador de Compatibilidade com Vagas Front-End Júnior
 
 Desenvolvido como atividade acadêmica para praticar JavaScript, programação assíncrona, orientação a objetos e controle de versão com Git e GitHub.
-
-## Vídeo de apresentação
-
-Link: *Adicionar o link do vídeo após a gravação.*
