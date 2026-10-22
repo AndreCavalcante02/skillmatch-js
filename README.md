@@ -125,7 +125,7 @@ skillmatch-js/
 
 - **Repositório público no GitHub:** https://github.com/AndreCavalcante02/skillmatch-js
 - **Quadro Kanban (Trello):** https://trello.com/invite/b/6ad3a179b950f8e98e74c3ca/ATTI22e3d217dfd7658918d8440df5c8977c39D8190E/skillmatch-js-mini-projeto-avaliativo
-- **Vídeo de demonstração:** https://drive.google.com/file/d/1D3wozZu1eb5zgw7KBP9KrCYSedzdPPFs/view?usp=drive_link
+- **Vídeo de demonstração:** https://drive.google.com/file/d/1F5Qayf-71O1byW_PJkr2NMbjAmPYhFaN/view?usp=drive_link
 
 ## 🎥 Demonstração
 
